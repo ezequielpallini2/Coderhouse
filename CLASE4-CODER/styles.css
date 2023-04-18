@@ -1,0 +1,49 @@
+@font-face {
+    font-family: fuente;
+    src: url(fonts/fuente.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+
+
+}
+.cont1{
+    background: yellowgreen;
+    font: 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+p{
+    background-color: antiquewhite;
+    
+    font-family: 'Rubik', sans-serif;
+}
+
+
+h2 {
+    background-color: aqua;
+    font-family: fuente;
+
+}
+
+h3{
+    background-color: red;
+    font-family: 'Rubik', sans-serif;
+    display: inline;
+    overflow: hidden;
+
+}
+
+.bordes{
+    background-color: aqua;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;    
+    padding: 20px 50px 100px 70px;
+    border: 20px blue outset;
+    margin: 20px 150px;
+}
+
