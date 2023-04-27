@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -55,3 +56,62 @@
     grid-area: img6;
     background-image: url(img/img6.jpg);
   }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color: blueviolet;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr); /*creo 4 columas*/
+    grid-template-rows: repeat(2, 2050px); /*creo 3 filas*/
+    grid-template-areas: 
+        "img1 img2 img3 img3"
+        "img1 img4 img5 img6";
+    padding: 20px;
+    grid-gap: 10px
+}
+
+.item{
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+.item1 {
+    grid-area: img1;
+    background-image: url(img/img1.jpg);
+  }
+  
+  .item2 {
+    grid-area: img2;
+    background-image: url(img/img2.jpg);
+  }
+  
+  .item3 {
+    grid-area: img3;
+    background-image: url(img/img3.jpg);
+  }
+  
+  .item4 {
+    grid-area: img4;
+    background-image: url(img/img4.jpg);
+  }
+  
+  .item5 {
+    grid-area: img5;
+    background-image: url(img/img5.jpg);
+  }
+  
+  .item6 {
+    grid-area: img6;
+    background-image: url(img/img6.jpg);
+  }
+>>>>>>> origin/main
