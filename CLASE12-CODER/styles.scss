@@ -1,0 +1,25 @@
+$color1: red; /* púedo almacenar cualquier valor dentro de una variable*/
+h1{
+    text-align: center;
+    color: grey;
+}
+
+header{
+    height: 180px;
+    width: auto;
+    background-color: aliceblue;
+
+    nav {
+        width: auto;
+        height: 150px;
+        background-color: $color1;
+        ul{
+            display: inline-block;
+        }
+    }
+}
+
+
+
+
+
