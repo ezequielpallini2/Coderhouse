@@ -1,0 +1,78 @@
+$variable: color;
+
+$cosa: ($variable +2) / $otravariable;
+
+
+
+    @if $variable == 0 {
+        color : $MiRojo;
+    }
+    @else if $variable == 1 {
+        color : $MiAzul;
+    }
+}
+
+
+    @for $incremento from 1 through 4 {
+        .todos-#{$variable} {
+            width : 100px * $incremento;
+            background-color: $MiRojo;
+        }
+    }
+
+
+
+
+
+    @each $variable in puma, sea-slug, egret {
+        .#{$variable}-icon {
+            background-image: url("img/#{$variable}.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: alpha;
+        }
+    }
+
+mapa=
+
+$redes: (
+    10px : red,
+    20px: green,
+    30px: blue,
+    40px: yellow,
+    50px: black,
+)
+
+
+@each $red, $green in $redes{
+    .btn--#{$red} {
+        background-color: #333;
+        height: 200px;
+        width: 200px;
+        border: 1px solid $font;
+        font-size: $red;
+    }
+}
+
+.red{
+    border: 1px solid $color;
+}
+
+.red--nueva{
+    @extend .red
+    color: $color2;
+
+}
+
+
+@mixin sizes ($width, $height, $color, $color2, $color3, $color4, $color5){
+    width: $width;
+    height: $height;
+    color: $color
+    color2: $color2;
+}
+
+
+.box2 {
+    @include sizes(100%, 400px, blue, red, green)
+}
