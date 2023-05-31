@@ -1,0 +1,408 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* de esta manera se adapta a la pantalla  */
+
+}
+
+html{
+    scroll-behavior: smooth; /* desplazamiento suave*/
+}
+
+
+
+
+header{
+    background-color: orange;
+    height: 80px;
+    width: 100%;
+    color: white;
+    padding: 20px; /* padding asi para que hhaya espacios */
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+
+.logo{
+    float: left;
+    float-weight: bold;
+    text-shadow: 0 0 5px gray;
+}
+
+logo span{
+    color: black;
+    text-shadow: 0 0 5px lightblue;;
+}
+.barra{
+    background-color: orange;
+
+}
+.barra li{
+    list-style: none;
+    display: inline-block; /* Lo mejor es trabajar con este valor */
+}
+
+.barra a{
+    color: white;
+    text-decoration: none;
+}
+
+.barra a:hover{ /* esto es una pseudoclase*/
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    height: 100vh; /*esto hace que se vea la imagen en todo mi navegador, viewportheight no es relativa sino absoluta, por eo funciona*/
+    width: 100%;
+    background-color: #333;
+    background-image: url(imagen.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.call{
+    color: white;
+    width: 60%;
+    background-color: rgba(0,0,80,0.4);
+    border: 3px solid orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin: 30px;
+    padding: 30px; /*aca le doy mas espacio entre las letras y el texto de adentro*/
+}
+
+h1{
+    color: orange !important;
+    margin-bottom: 20px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid orangered;
+}
+
+.call a:hover{ /*hover significa que esto va a pasar cuando yo posicione el click ahí*/
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid orangered;
+}
+h2.sec{
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;;
+    padding: 15px;
+}
+
+.cont{
+    height: 700px;
+    width: 100%;
+    background-color: #333;
+}
+
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.redes a p{
+    color: orange;
+    letter-spacing: 20px;
+    font-size: 50px;
+} 
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.subir:hover{
+    box-shadow: 0 0 5px #fff;
+
+}
+.cont1{
+    display: flex; /*automaticamente los elementos se van a acomodar uno al lado del otro*/
+    flex-direction: row; /*me pone todo uno al lado del otro de forma normal, ahora si pongo  si pongo row-reverse me organiza todo al revés*/
+    flex-wrap: wrap; /*me los manda para abajo si no entran en la pantalla. flexbox = caja flexible jajaj*/
+    flex-flow: row wrap;
+    justify-content: space-evenly;/*esto nos modifica el espacio entre las cosas, varios argumentos*/
+    align-items: baseline;/*es para trabajar la alineacion de los items en base al eje veertical (porque estamos como row)*/
+    align-content: space-evenly;
+}
+
+.item{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;/*genera un centrado momentaneo*/
+    border: 2px solid #fff;
+    font-size: 20px;
+    text-transform: uppercase;/*para verlo en mayusculas*/
+}
+
+.item1{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;/*genera un centrado momentaneo*/
+    border: 2px solid #fff;
+    font-size: 20px;
+    text-transform: uppercase;/*para verlo en mayusculas*/
+    padding: 15px;
+}
+
+.item2{
+    line-height: 20px;
+    order: 2;
+    flex-basis: 180px;
+    flex-grow: 4;/*esto hace que crezca en la medida que pueda y haya espacio. niveles de crecimiento*/
+    flex-shrink: 2; /*esto hace lo contrario que el grow, lo achica*/
+}
+
+.item4{
+    line-height: 180px;
+    order: 4;
+    
+    flex-basis: 180px;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* de esta manera se adapta a la pantalla  */
+
+}
+
+html{
+    scroll-behavior: smooth; /* desplazamiento suave*/
+}
+
+
+
+
+header{
+    background-color: orange;
+    height: 80px;
+    width: 100%;
+    color: white;
+    padding: 20px; /* padding asi para que hhaya espacios */
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+
+.logo{
+    float: left;
+    float-weight: bold;
+    text-shadow: 0 0 5px gray;
+}
+
+logo span{
+    color: black;
+    text-shadow: 0 0 5px lightblue;;
+}
+.barra{
+    background-color: orange;
+
+}
+.barra li{
+    list-style: none;
+    display: inline-block; /* Lo mejor es trabajar con este valor */
+}
+
+.barra a{
+    color: white;
+    text-decoration: none;
+}
+
+.barra a:hover{ /* esto es una pseudoclase*/
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    height: 100vh; /*esto hace que se vea la imagen en todo mi navegador, viewportheight no es relativa sino absoluta, por eo funciona*/
+    width: 100%;
+    background-color: #333;
+    background-image: url(imagen.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.call{
+    color: white;
+    width: 60%;
+    background-color: rgba(0,0,80,0.4);
+    border: 3px solid orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin: 30px;
+    padding: 30px; /*aca le doy mas espacio entre las letras y el texto de adentro*/
+}
+
+h1{
+    color: orange !important;
+    margin-bottom: 20px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid orangered;
+}
+
+.call a:hover{ /*hover significa que esto va a pasar cuando yo posicione el click ahí*/
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid orangered;
+}
+h2.sec{
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;;
+    padding: 15px;
+}
+
+.cont{
+    height: 700px;
+    width: 100%;
+    background-color: #333;
+}
+
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.redes a p{
+    color: orange;
+    letter-spacing: 20px;
+    font-size: 50px;
+} 
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.subir:hover{
+    box-shadow: 0 0 5px #fff;
+
+}
+.cont1{
+    display: flex; /*automaticamente los elementos se van a acomodar uno al lado del otro*/
+    flex-direction: row; /*me pone todo uno al lado del otro de forma normal, ahora si pongo  si pongo row-reverse me organiza todo al revés*/
+    flex-wrap: wrap; /*me los manda para abajo si no entran en la pantalla. flexbox = caja flexible jajaj*/
+    flex-flow: row wrap;
+    justify-content: space-evenly;/*esto nos modifica el espacio entre las cosas, varios argumentos*/
+    align-items: baseline;/*es para trabajar la alineacion de los items en base al eje veertical (porque estamos como row)*/
+    align-content: space-evenly;
+}
+
+.item{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;/*genera un centrado momentaneo*/
+    border: 2px solid #fff;
+    font-size: 20px;
+    text-transform: uppercase;/*para verlo en mayusculas*/
+}
+
+.item1{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;/*genera un centrado momentaneo*/
+    border: 2px solid #fff;
+    font-size: 20px;
+    text-transform: uppercase;/*para verlo en mayusculas*/
+    padding: 15px;
+}
+
+.item2{
+    line-height: 20px;
+    order: 2;
+    flex-basis: 180px;
+    flex-grow: 4;/*esto hace que crezca en la medida que pueda y haya espacio. niveles de crecimiento*/
+    flex-shrink: 2; /*esto hace lo contrario que el grow, lo achica*/
+}
+
+.item4{
+    line-height: 180px;
+    order: 4;
+    
+    flex-basis: 180px;
+>>>>>>> origin/main
+}
