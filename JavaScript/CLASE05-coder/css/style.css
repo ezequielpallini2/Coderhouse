@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+html {
+    font-size: 0.8rem;
+}
+
+body {
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ocultar {
+    display: none;
+}
+
+.red-text {
+    color: darkred !important;
+}
+
+.blue-text {
+    color: blue !important;
+}
+
+.orange-text {
+    color: darkorange !important;
+}
+
+.bolder-600 {
+    font-weight: 600;
+}
