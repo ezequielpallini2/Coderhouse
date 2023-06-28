@@ -1,18 +1,10 @@
-const paises = ['Uruguay', 'Chile', 'Argentina']
+const carrito = [{id: 1234, nombre: 'NOTEBOOK EXO E17', importe: 79950},
+                 {id: 6789, nombre: 'IPAD PRO 12', importe: 219890},
+                 {id: 3456, nombre: 'LENOVO IDEAPAD 13', importe: 199949}]
 
-/*
-    .push()     //agregar elementos en la última posición
-    .pop()      //elimina elemento (de la última posición)
-    .slice()    //cortar y generar un nuevo array con determinados elementos
-    .splice()   //eliminar un elemento de un array, (eliminar varios), reemplazar un elemento por otro
-    .join()     // ", " " - " 
-    .concat()   //fusionar varios arrays
-    .sort()     // ordenar arrays ASC, 
-    .reverse()  // invertir posición de elementos del array
-    .sort().reverse() //ordenamiento descendente
-*/
+const carrito2 = [{id: 1234, nombre: 'NOTEBOOK EXO E17', importe: 79950, cantidad: 1},
+                  {id: 6789, nombre: 'IPAD PRO 12', importe: 219890, cantidad: 3}]
 
-// {id: 1234, imagen:'💻', nombre: 'NOTEBOOK EXO E17', importe: 79950, categoria: 'Portátiles'}
 
 const productos = [{id: 1234, imagen:'💻', nombre: 'NOTEBOOK EXO E17', importe: 79950, categoria: 'Portátiles'},
                    {id: 2345, imagen:'💻', nombre: 'MACBOOK AIR 13', importe: 749900, categoria: 'Portátiles'},
@@ -52,6 +44,11 @@ function sumarNumeros(nroA, nroB, fn) {
 function recorrerArrayProductos() {
     //iterar: recorrer array de principio a fin
     //toma cada elemento u objeto, y lo pasa como parámetro
+    // for convencional y for ... of
+    // for (const elemento of array) {
+    //     console.log(elemento)
+    // }
+
     productos.forEach((producto)=> {
         console.log(producto)
     })
@@ -101,3 +98,75 @@ function filtrarProductos() {
         }
 }
 
+function mapearProductos() {
+    //permite realizar transf. a partir del array original
+
+    //EJEMPLO1: creamos array de elementos con nombres de productos
+    //let arraySimplificado = productos.map((producto)=> producto.nombre )
+
+    //EJEMPLO2: creamos un array de obj con nombre e importe
+    // let arraySimplificado = productos.map((producto)=> {
+    //         return {
+    //                 descripcion: producto.nombre,
+    //                 precio: producto.importe
+    //                }
+    //     })
+    // console.table(arraySimplificado)
+
+    //EJEMPLO3:  proyección de precios trimestral
+    let arrayProyeccion = productos.map((producto)=> {
+            return {
+                    nombre: producto.nombre,
+                    importeActual: producto.importe,
+                    importe10on: parseFloat((producto.importe * 1.1).toFixed(2)),
+                    importeCash: parseFloat((producto.importe * 0.9).toFixed(2)),
+                    importeMes1: parseFloat((producto.importe * 1.06).toFixed(2)),
+                    importeMes2: parseFloat((producto.importe * 1.12).toFixed(2)),
+                    importeMes3: parseFloat((producto.importe * 1.18).toFixed(2)),
+                   }
+    })
+    console.table(arrayProyeccion)
+}
+
+function calcularTotalCarrito() {
+    //EJEMPLO1: carrito simple
+    // let totalCarrito = carrito.reduce((total, producto)=> total + producto.importe, 0)
+    // console.log('Total del carrito:', totalCarrito)                                      
+
+    //EJEMPLO2: carrito múltiples unidades
+    let totalCarrito = carrito2.reduce((total, producto)=> total + (producto.importe * producto.cantidad), 0)
+    console.log('Total del carrito:', totalCarrito)
+}
+
+function ordenarProductos() {
+    //ORDERN ASC
+    // productos.sort((a, b)=> {
+    //     if (a.importe > b.importe) {
+    //         return 1
+    //     }
+    //     if (a.importe < b.importe) {
+    //         return -1
+    //     }
+    //     return 0
+    // })
+    //console.table(productos)
+    //ORDEN DESC
+    productos.sort((a, b)=> {
+        if (a.importe < b.importe) {
+            return 1
+        }
+        if (a.importe > b.importe) {
+            return -1
+        }
+        return 0
+    })
+    console.table(productos)
+}
+
+/* A FUTURO...
+    findLast()
+    findLastIndex()
+    flat(1) //
+    group()
+    new Set()
+*/
