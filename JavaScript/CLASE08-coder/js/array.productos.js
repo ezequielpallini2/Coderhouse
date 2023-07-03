@@ -160,7 +160,7 @@ function ordenarProductos() {
         }
         return 0
     })
-    console.table(productos)
+    console.table(productos) 
 }
 
 /* A FUTURO...
