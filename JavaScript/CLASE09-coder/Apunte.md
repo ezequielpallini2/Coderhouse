@@ -334,7 +334,24 @@ find retorna el primer elemento del array que coincida con la condicion enviada.
 
   get product by query
   <div class="container" id "container">
-    const container =document.querySelector('div#product')
+    const container =document.querySelector('div#product.product1')
 
-    
+
+  function retornarCardHTML(producto){
+    return `<div class="div-card">
+              <div class="imagen">
+              <h1>${producto.imagen]</h1>
+              </div>
+              <div class>}
+
+   
+  function cargarProductos(){
+    arrayProductos.forEach((producto)=>{
+
+
+    }
+  }
+  }
+
+
 
